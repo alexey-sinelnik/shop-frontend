@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+hr {
+  opacity: 30%;
+}
+
+.h2 {
+  @apply text-3xl font-medium text-black
+}
+
+.h3 {
+  @apply text-xl font-medium text-black
+}
+
+.swiper-pagination-bullet {
+  cursor: pointer;
+  width: 10px !important;
+  height: 10px !important;
+  display: inline-block;
+  border-radius: 50%;
+  background: #fff !important;
+  opacity: 1 !important;
+  border: 1px solid #fff;
+  margin: 0 5px;
+  box-shadow: none;
+  transition: all 0.4s ease 0.2s;
+  transform: scale(0.7);
+}
+.swiper-pagination-bullet:hover, .swiper-pagination-bullet-active {
+  background-color: #fff;
+  border-color: #fff;
+  transform: scale(1.5);
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px){
+  .swiper-pagination {
+    display: none;
+  }
+
+  .swiper-button-prev:after, .swiper-button-next:after {
+    display: none;
+  }
+}
